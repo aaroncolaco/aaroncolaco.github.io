@@ -177,7 +177,7 @@
 .contact .form-inline .form-group input {
     width: 160%;
     margin-bottom: 5%;
-    background-color: transparent;
+    background-color: rgba(34,34,34,0.5);
     color: white;
     font-weight: bold;
     line-height: 2em;
@@ -186,14 +186,14 @@
 .contact .form-inline .form-group textarea {
     width: 122%;
     margin-bottom: 5%;
-    background-color: transparent;
+    background-color: rgba(34,34,34,0.5);
     color: white;
     font-weight: bold;
 }
 
 .contact .btn-default {
 	color: #ffffff;
-	background-color: transparent;
+	background-color: rgba(34,34,34,0.5);
 	font-weight: bold;
 }
 .contact .btn-default:hover {
