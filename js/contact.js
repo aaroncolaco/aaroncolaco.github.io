@@ -41,7 +41,7 @@ $(document).ready(function() {
 				message : messageToSend
 			},
 			cache: false,
-			complete: function() {
+			success: function() {
 				$('#form').hide();
 				$('#changingText').text("Hey " + fname +  "! I will be in touch with you shortly");
 				$("#changingText").css('font-size', '2em');
