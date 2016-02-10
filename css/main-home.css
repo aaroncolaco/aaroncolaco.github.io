@@ -180,6 +180,7 @@
     background-color: transparent;
     color: white;
     font-weight: bold;
+    line-height: 2em;
 }
 
 .contact .form-inline .form-group textarea {
@@ -197,6 +198,13 @@
 }
 .contact .btn-default:hover {
 	background-color: #128F76;
+}
+
+.contact .btn-default i {
+	color: #ffffff;
+	font-size: 1em;
+	padding-right: 5%;
+	font-weight: normal;
 }
 
 
