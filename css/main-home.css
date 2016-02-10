@@ -17,15 +17,21 @@
 }
 
 .jumbotron p {
+	margin-top: 2%;
 	color: #ffffff;
 	font-size: 1.8em;
 	font-weight: bold;
 }
 
-.jumbotron i {
+.jumbotron .logos {
+	margin-top: 3%;
+	display: block;
+}
+
+.jumbotron .logos a {
 	color: #ffffff;
 	font-size: 3em;
-	padding-right: 3%;
+	margin-right: 5%;
 }
 .jumbotron i:hover {
 	color: #5a5aad;
