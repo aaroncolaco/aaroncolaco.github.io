@@ -4,6 +4,12 @@ html {
 
 body { 
 	height: 100%;	/*So that the 100% divs are full height*/
+	background-image:url('/images/image3.jpg');
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0%;
+	background-attachment: fixed;
 }
 
 * { 
@@ -12,14 +18,23 @@ body {
 
 .navbar {
 	width: 100%;
-	z-index: 1;
+	z-index: 3;
+	height: 10%;
 
 	background-color: transparent;
 	border-color: transparent;
 }
 
-.navbar > .navbar-collapse {
-	text-align: center;
+.navbar-default .navbar-header .icon-bar {
+	background-color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+	max-height: 100%;
+}
+
+.navbar .navbar-collapse > .navbar-right  {
+	text-align: left;
 }
 
 .fa {

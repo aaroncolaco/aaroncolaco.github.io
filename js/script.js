@@ -15,7 +15,7 @@ $(document).ready(function(){
 	};
 
 	$('.navbar-toggle').click(function () {
-		$(".navbar-default").css('background-color', '#222222');
+		$(".navbar-collapse").css('background-color', '#222222');
 	});
 
 	$(".nav a").on("click", function(){
