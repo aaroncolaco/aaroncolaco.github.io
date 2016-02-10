@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 		var name = fname + " " + lname;
 
-		var messageToSend = "Name: " + name + "\nEmail: " + email + "\Telephone: " +	//have to use double quotes since PHP detects  
+		var messageToSend = "Name: " + name + "\nEmail: " + email + "\nTelephone: " +	//have to use double quotes since PHP detects  
 			number1 + "\nCellphone: " + number2 + "\nCompany: " + company +			//escape sequences like \n only in double quotes
 			"\nDesignation: " + designationText + "\nMessage: " + message;
 
@@ -33,9 +33,13 @@ $(document).ready(function() {
 		//alert (dataString);return false; 	//uncomment to display the data that will be sent to the php script on button click
 
 		$.ajax({
-			type: "post",
 			url: "/php/mail.php",
-			data: dataString,
+			type: "POST",
+			data: {
+				name : fname,
+				email : email,
+				message : messageToSend
+			},
 			success: function() {
 				$('#form').hide();
 				$('#changingText').text("Hey " + fname +  "! I will be in touch with you shortly");

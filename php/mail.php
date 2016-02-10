@@ -2,10 +2,19 @@
 	
 	ini_set('display_errors',1);
 
-	// from the form
-	$name = $_POST["Name"];
-	$email = $_POST["Email"];
-	$message = $_POST["MessageToSend"];
+	// Check for empty fields
+	if(empty($_POST['name'])  		||
+	   empty($_POST['email']) 		||
+	   empty($_POST['message'])		||
+	   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+	   {
+		echo "No arguments Provided!";
+		return false;
+	   }
+
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$message = $_POST["message"];
 
 	// set here
 	$subject = "Website Contact Form:  $name";
@@ -19,7 +28,9 @@
 	
 	// send the email
 	mail($to, $subject, $message, $headers);
+
+	return true;
 	
 	#redirect
-	header( "Location: http://aaroncolaco.com/#contact" );	//this line is important. remember to change domain if you use the script on a new domain. otherwise it won't return and carry out remaining operations after sending the email
+	//header( "Location: http://aaroncolaco.com/#contact" );	//this line is important. remember to change domain if you use the script on a new domain. otherwise it won't return and carry out remaining operations after sending the email
 ?>
