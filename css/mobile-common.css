@@ -1,0 +1,46 @@
+html {
+	height: 100%;	/*So that the 100% divs are full height*/
+}
+
+body { 
+	height: 100%;	/*So that the 100% divs are full height*/
+}
+
+* { 
+	font-family: Verdana;
+}
+
+.navbar {
+	width: 100%;
+	z-index: 1;
+
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar > .navbar-collapse {
+	text-align: center;
+}
+
+.fa {
+	color: white;
+	font-size: 1.3em;
+}
+
+.nav.navbar-nav li a {
+	color: #ffffff;
+	font-size: 1.2em;
+}
+
+.nav.navbar-nav li a:hover {
+	color: #ffffff;
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 4px;
+}
+
+.navbar-default .navbar-collapse .navbar-nav > .active a {
+	color: #ffffff;
+	background-color: transparent;
+	border-bottom: 2px solid #efefef;
+	padding-bottom: 3px;
+ }

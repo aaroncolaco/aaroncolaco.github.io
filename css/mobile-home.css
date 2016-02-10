@@ -1,0 +1,127 @@
+.jumbotron {
+	background-image:url('/images/mobile/house7.jpg');
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0%;
+}
+
+.jumbotron .container {
+	position: relative;
+	padding-top: 10%;
+}
+
+.jumbotron h1 {
+	color: #ffffff;
+	font-size: 4em;  
+}
+
+.jumbotron p {
+	color: #ffffff;
+	font-size: 1.5em;
+}
+
+.jumbotron .btn-default {
+	color: #ffffff;
+	background-color: transparent;
+	font-size: 1.2em;
+}
+
+
+.introduction {
+	background-image:url('/images/mobile/alone.jpg');
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0%;
+	/*background-attachment: fixed;*/
+}
+
+.introduction .container {
+	position: relative;
+	padding-top: 10%;
+	width: 80%;
+	padding-bottom: 5%;
+}
+
+.introduction h1 {
+	color: #000000;
+}
+
+.introduction p {
+	color: #000000;
+	font-size: 1.5em;
+}
+.introduction .btn-primary {
+	color: #000000;
+	background-color: transparent;
+	font-size: 1.2em;
+	border-color: #000000;
+}
+
+
+.recovery {
+	background-image:url('/images/mobile/lonely.jpg');
+	/*background-color: #666666;*/
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0%;
+	/*background-attachment: fixed;*/
+}
+
+.recovery .container {
+	position: relative;
+	padding-top: 10%;
+	width: 80%;
+	padding-bottom: 5%;
+}
+
+.recovery h1 {
+	color: #000000;
+}
+
+.recovery p {
+	color: #000000;
+	font-size: 1.5em;
+}
+
+.recovery .btn-default {
+	color: #000000;
+	background-color: transparent;
+	font-size: 1.2em;
+	border-color: #000000;
+}
+
+
+.our-role {
+	background-image:url('/images/mobile/house5.jpg');
+	/*background-color: #666666;*/
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0%;
+	/*background-attachment: fixed;*/
+}
+
+.our-role .container {
+	position: relative;
+	padding-top: 10%;
+	width: 80%;
+	padding-bottom: 5%;
+}
+
+.our-role h1 {
+	color: #ffffff;
+}
+
+.our-role p {
+	color: #ffffff;
+	font-size: 1.5em;
+}
+
+.our-role .btn-default {
+	color: #ffffff;
+	background-color: transparent;
+	font-size: 1.2em;
+}
