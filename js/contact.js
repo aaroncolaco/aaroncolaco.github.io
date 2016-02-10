@@ -40,6 +40,7 @@ $(document).ready(function() {
 				email : email,
 				message : messageToSend
 			},
+			cache: false,
 			success: function() {
 				$('#form').hide();
 				$('#changingText').text("Hey " + fname +  "! I will be in touch with you shortly");
@@ -51,7 +52,7 @@ $(document).ready(function() {
 				console.log(xhr.statusText);
 				console.log(textStatus);
 				console.log(error);
-			  }
+			},
 		});
 		
 		return;

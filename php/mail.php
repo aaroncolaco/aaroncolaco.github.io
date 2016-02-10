@@ -1,16 +1,16 @@
 <?php
 	
-	ini_set('display_errors',1);
+	//ini_set('display_errors',1);
 
 	// Check for empty fields
 	if(empty($_POST['name'])  		||
-	   empty($_POST['email']) 		||
-	   empty($_POST['message'])		||
-	   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-	   {
-		echo "No arguments Provided!";
-		return false;
-	   }
+		empty($_POST['email']) 		||
+		empty($_POST['message'])		||
+		!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+	{
+	echo "No arguments Provided!";
+	return false;
+	}
 
 	$name = $_POST["name"];
 	$email = $_POST["email"];
