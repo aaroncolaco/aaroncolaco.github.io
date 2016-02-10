@@ -34,16 +34,19 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "post",
-			url: "/static/php/mail.php",
+			url: "/php/mail.php",
 			data: dataString,
-			complete: function() {
+			success: function() {
 				$('#form').hide();
 				$('#changingText').text("Hey " + fname +  "! I will be in touch with you shortly");
+				$("#changingText").css('font-size', '2em');
 			},
 			error: function(xhr, textStatus, error){
-				  console.log(xhr.statusText);
-				  console.log(textStatus);
-				  console.log(error);
+				$('#changingText').text("Something seems to have gone wrong. How about catching me on Twitter?");
+				$("#changingText").css('font-size', '2em');
+				console.log(xhr.statusText);
+				console.log(textStatus);
+				console.log(error);
 			  }
 		});
 		
