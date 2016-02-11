@@ -11,6 +11,12 @@ $(document).ready(function() {
 
 	});
 
+	var validateEmail = function (email) {
+		var regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+		
+		return regex.test(email);
+	}
+
 	//function to send data to the PHP script
 	var sendData = function() { 
 		var fname = $('#fname').val();
@@ -21,6 +27,26 @@ $(document).ready(function() {
 		var company= $('#company').val();
 		var designationText= $('#designationText').val();
 		var message = $('#message').val();
+
+		if (!fname.trim() || !lname.trim() || !email.trim() || !message.trim()) {
+			$('#changingText').text("Please fill all required fields");
+			$("#changingText").css('font-size', '2em');
+			$('html, body').animate({
+					scrollTop: $("#contact").offset().top
+				}, 500);
+			return;
+		};
+
+		if (!validateEmail(email)) {
+			$('#changingText').text("Invalid Email");
+			$("#changingText").css('font-size', '2em');
+			$('#email').focus();
+			$('html, body').animate({
+			        scrollTop: $("#contact").offset().top
+			    }, 500);
+			return;
+		};
+
 
 		var name = fname + " " + lname;
 
@@ -47,8 +73,9 @@ $(document).ready(function() {
 				$("#changingText").css('font-size', '2em');
 			},
 			error: function(xhr, textStatus, error){
-				$('#changingText').text("Something seems to have gone wrong. How about catching me on Twitter?");
-				$("#changingText").css('font-size', '2em');
+				$('#form').hide();
+				$('#changingText').text("My mail server seems to be broken. How about catching me on Twitter?");
+				$("#changingText").css('font-size', '3em');
 				console.log(xhr.statusText);
 				console.log(textStatus);
 				console.log(error);
