@@ -213,6 +213,11 @@
 .form-control::-moz-placeholder { color: white; font-size: 1.2em; }
 .form-control:-ms-input-placeholder { color: white; font-size: 1.2em; }
 
+.footer {
+	text-align: center;
+	color: #ffffff;
+	margin-top: 5%;
+}
 
 
 .portfolio-modal .modal-content {
