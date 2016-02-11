@@ -274,6 +274,11 @@
 	opacity: 0;
 }
 
+.portfolio-modal .modal-body {
+	font-size: 1.3em;
+	/*text-align: left;*/
+}
+
 .portfolio-modal .fa-times {
 	color: #222222;
 }
