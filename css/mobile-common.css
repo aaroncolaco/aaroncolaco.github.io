@@ -4,12 +4,28 @@ html {
 
 body { 
 	height: 100%;	/*So that the 100% divs are full height*/
-	background-image:url('/images/image3.jpg');
+	background-image:url('/images/mobile.jpg');
 	min-height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: 0%;
 	background-attachment: fixed;
+}
+/*To make the background stationary on mobile and prevent stretching*/
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('/images/mobile.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 * { 
