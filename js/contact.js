@@ -25,7 +25,7 @@ $(document).ready(function() {
 		var number1 = $('#number1').val();
 		var number2 = $('#number2').val();
 		var company= $('#company').val();
-		var designationText= $('#designationText').val();
+		var designationText= $('#designation').val();
 		var message = $('#message').val();
 
 		if (!fname.trim() || !lname.trim() || !email.trim() || !message.trim()) {
@@ -67,7 +67,7 @@ $(document).ready(function() {
 				"message" : messageToSend
 			},
 			cache: false,
-			success: function() {
+			complete: function() {
 				$('#form').hide();
 				$('#changingText').text("Hey " + fname +  "! I will be in touch with you shortly");
 				$("#changingText").css('font-size', '2em');
