@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "post",
-			url: "php/mail.php",
+			url: "http://ikshaa.com/static/php/contact.php",
 			data: {
 				"name" : fname,
 				"email" : email,
