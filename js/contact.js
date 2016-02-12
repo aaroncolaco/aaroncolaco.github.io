@@ -59,12 +59,12 @@ $(document).ready(function() {
 		//alert (dataString);return false; 	//uncomment to display the data that will be sent to the php script on button click
 
 		$.ajax({
-			url: "http://www.ikshaa.com/static/php/contact.php",
+			url: "/php/mail.php",
 			type: "POST",
 			data: {
-				name : fname,
-				email : email,
-				message : messageToSend
+				"name" : fname,
+				"email" : email,
+				"message" : messageToSend
 			},
 			cache: false,
 			success: function() {
