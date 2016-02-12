@@ -59,8 +59,8 @@ $(document).ready(function() {
 		//alert (dataString);return false; 	//uncomment to display the data that will be sent to the php script on button click
 
 		$.ajax({
+			type: "post",
 			url: "php/mail.php",
-			type: "POST",
 			data: {
 				"name" : fname,
 				"email" : email,
