@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "post",
-			url: "http://ikshaa.com/static/php/contact.php",
+			url: "http://hype-entertainment.com/php/mail-aaron.php",
 			data: {
 				"name" : fname,
 				"email" : email,
