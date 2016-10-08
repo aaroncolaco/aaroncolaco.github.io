@@ -42,8 +42,8 @@ $(document).ready(function() {
 			$("#changingText").css('font-size', '2em');
 			$('#email').focus();
 			$('html, body').animate({
-			        scrollTop: $("#contact").offset().top
-			    }, 500);
+					scrollTop: $("#contact").offset().top
+				}, 500);
 			return;
 		};
 
@@ -55,8 +55,6 @@ $(document).ready(function() {
 			"\nDesignation: " + designationText + "\nMessage: " + message;
 
 		var dataString = "Name=" + name + "&Email=" + email + "&MessageToSend=" + messageToSend;
-
-		//alert (dataString);return false; 	//uncomment to display the data that will be sent to the php script on button click
 
 		$.ajax({
 			type: "post",
