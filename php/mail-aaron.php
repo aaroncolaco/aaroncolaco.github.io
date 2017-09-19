@@ -18,7 +18,7 @@
 
 	// set here
 	$subject = "Website Contact Form:  $name";
-	$to = "aaroncolaco.work@gmail.com"; /* add email address here*/
+	$to = ""; /* add email address here*/
 
 	$headers = "From: noreply@aaroncolaco.com\r\n";
 	$headers .= "Content-type: text/plain\r\n";		/* needs to be text/plain and NOT text/html so that the newline characters work. Otherwise received email is in one line */
